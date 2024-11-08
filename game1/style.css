@@ -1,0 +1,131 @@
+
+  *{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+
+
+  .parentContainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 102px); /* Adjust height to fit remaining space */
+    padding-top: 20px; /* Add padding to the top to create space between parentContainer1 and picture-container */
+  }
+
+  .container,
+  .container2 {
+    background-color: grey;
+    padding: 0px;
+    height: 102px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+    
+  .item{
+    color: white; 
+    font-size: 35px;
+    padding: 20px; 
+    margin: 10px; 
+  } 
+
+
+
+
+
+  .parentContainer2 {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 152px); /* Adjust height to fit remaining space */
+    padding-top: 20px; /* Add padding to the top to create space between parentContainer1 and picture-container */
+  }
+
+  .picture-container {
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Adjust the margin-top value to move it lower */
+    
+  }
+
+  .centered-picture {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 1000px; /* Maximum width */
+    border-radius: 10px
+  }
+
+  /* Modal Image */
+  #modal-image {
+    max-width: 1000px; /* Maximum width */
+    max-height: 1000px; /* Maximum height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+  }
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Add these styles to your CSS */
+
+#alarmPicture {
+  position: fixed;
+  top: 20px; /* Adjust this value as needed */
+  right: 5%; /* Adjust this value as needed */
+  width: 100px; /* Adjust the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 999; /* Ensure the image stays on top */
+}
+
+
+
+
+
+

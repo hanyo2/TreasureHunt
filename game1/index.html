@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Wake Up Ruth!</title>
+</head>
+<body>
+    <img id="alarmPicture" src="white.png" alt="Upper Right Image">
+
+
+    <div class="parentContainer1">
+        <div class="container">
+            <div class="items-1 item">Wake Up Ruth!</div>
+        </div>
+        <div class="picture-container">
+            <img id="picture" class="centered-picture" src="state.webp" alt="Centered Picture">
+        </div>
+        <p id="counter" style="display: none;">0</p>
+        <div class="container2">
+            <div class="items-1 item">Sleepy-Meter</div>
+        </div>
+    </div>  
+    
+
+ 
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modal-text"></p>   
+      </div>
+  </div>
+
+    <canvas id="meter" width="50" height="100%" style="position: fixed; top: 0; right: 0; border: 1px solid black;"></canvas>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treasure</title>
+  <!-- Google Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card" id="card">
+    <div class="outside">
+      <div class="front">
+        <p>Secret Treasure!!</p>
+        <div class="cake">
+          <div class="top-layer"></div>
+          <div class="middle-layer"></div>
+          <div class="bottom-layer"></div>
+          <div class="candle"></div>
+        </div>
+      </div>
+      <div class="back"></div>
+    </div>
+    <div class="inside">
+      <img src="treasure.jpg" alt="Your Image" class="custom-image" />
+    </div>
+    <div class="insideText">
+      <p>Congratulations Adventurer! <br><br>
+        You have completed all three challenges and reached the treasure, enclosed within this card is your reward, enjoy!
+        </p>
+    </div>
+    <audio id="treasureSound">
+      <iframe src="treasureChest.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+    </audio>
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    var chopin = new Audio('treasureChest.mp3');
+
+    $(document).ready(function() {
+      $("#card").on("click", function() {
+        // Toggle the card class
+
+        chopin.play(); 
+        $(this).toggleClass("opened");
+    
+        
+    
+        // Add a delay before showing the insideText
+        setTimeout(function() {
+          $(".insideText").toggleClass("active");
+        }, 2000);
+      });
+    });
+    </script>
+</body>
+</html>
